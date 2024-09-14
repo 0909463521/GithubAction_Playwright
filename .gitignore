@@ -1,0 +1,9 @@
+# Ignore node_modules directory
+node_modules/
+
+# Other files and directories to ignore
+.DS_Store
+.env
+dist/
+test-results/.last-run.json
+test-results/.last-run.json
