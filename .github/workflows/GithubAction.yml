@@ -48,6 +48,6 @@ jobs:
         run: |
           curl -X POST \
           -H "Accept: application/vnd.github.v3+json" \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Authorization: token ${{ secrets.MY_SECRET_TOKEN }}" \
           https://api.github.com/repos/0909463521/GithubAction_Cypress/dispatches \
           -d '{"event_type":"playwright_tests_completed"}'
