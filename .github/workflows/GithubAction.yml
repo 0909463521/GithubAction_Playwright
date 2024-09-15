@@ -29,13 +29,13 @@ jobs:
         with:
           node-version: ${{matrix.node-version}}
           
-      # - name: Install Library
-      #   run: |
-      #     npm ci
-      #     npx playwright install --with-deps
+      - name: Install Library
+        run: |
+          npm ci
+          npx playwright install --with-deps
           
-      # - name: Test Web App
-      #   run: npx playwright test
+      - name: Test Web App
+        run: npx playwright test
       
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
