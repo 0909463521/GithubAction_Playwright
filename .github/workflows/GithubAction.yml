@@ -51,5 +51,5 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: token ${{ secrets.MY_SECRET_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"ref": "main"}' \
+            -d '{"event_type": "run-cypress-tests"}' \
             https://api.github.com/repos/0909463521/GithubAction_Cypress/dispatches
